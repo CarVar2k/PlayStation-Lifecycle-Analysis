@@ -75,7 +75,7 @@ The project combines three primary analytical datasets.
 
 The project follows an end-to-end analytical workflow:
 
-**Excel → Python → MySQL → Advanced Excel Dashboard**
+**Excel → Python → SQL → Excel Dashboard**
 
 ### Excel
 
@@ -85,9 +85,9 @@ Excel was used to establish the historical PlayStation dataset, calculate genera
 
 Python was used to process Consumer Price Index data and convert historical PlayStation launch prices into constant 2025 dollars.
 
-### MySQL
+### SQL
 
-MySQL was used to analyze PS5 quarterly hardware performance, including:
+SQL was used to analyze PS5 quarterly hardware performance, including:
 
 - Quarterly shipments
 - Annual shipments
@@ -161,7 +161,7 @@ The two most recent completed transitions were approximately:
 
 This suggests that recent PlayStation generations have remained active longer before the launch of their successors.
 
-![PlayStation Lifecycle Analysis](images/lifecycle_analysis.png)
+<img width="624" height="375" alt="Screenshot 2026-10-26 at 12 36 53 AM" src="https://github.com/user-attachments/assets/2ef31bf0-00d9-4928-92ca-934da26a6639" />
 
 ### Why It Matters
 
@@ -189,7 +189,7 @@ Selected results include:
 
 \*PS3 launched with multiple configurations. The project uses a selected launch configuration for consistency and documents this assumption in the source methodology.
 
-![PlayStation Pricing Analysis](images/pricing_analysis.png)
+<img width="630" height="346" alt="Screenshot 2026-10-26 at 12 43 53 AM" src="https://github.com/user-attachments/assets/0389405f-b7a4-4b77-bf72-97e41fc32d1f" />
 
 ### Why It Matters
 
@@ -331,7 +331,7 @@ Historical lifecycle intervals provide useful scenario benchmarks, but they cann
 - Exploratory data analysis
 - Matplotlib visualization
 
-## MySQL
+## SQL
 
 - Database creation
 - Table creation
@@ -386,4 +386,4 @@ playstation-lifecycle-analysis/
 
 # Conclusion
 
-This analysis shows how PlayStation's console lifecycle, pricing, and hardware performance have evolved across generations. The historical lifecycle analysis found an average completed generation interval of approximately **6.29 years**, while the two most recent completed PlayStation transitions lasted approximately **6.99 years**. The inflation analysis also demonstrates why nominal prices alone can be misleading. After adjusting selected U.S. launch prices into constant 2025 dollars, PlayStation launch prices fluctuate considerably rather than following a simple upward trend. PS5 quarterly hardware data shows strong holiday seasonality and a pattern of earlier lifecycle expansion followed by more recent moderation. These trends are consistent with a console progressing into a more mature stage of its lifecycle. Historical generation intervals were then used to construct PS6 timing scenarios ranging approximately from **2027 to 2028**. These scenarios provide historical context and should be interpreted as analytical benchmarks rather than predictions of Sony's actual product plans. Overall, this project demonstrates an end-to-end data analysis workflow using **Excel, Python, MySQL, and data visualization** to transform multiple datasets into an interactive dashboard and documented analytical case study.
+This analysis shows how PlayStation's console lifecycle, pricing, and hardware performance have evolved across generations. The historical lifecycle analysis found an average completed generation interval of approximately **6.29 years**, while the two most recent completed PlayStation transitions lasted approximately **6.99 years**. The inflation analysis also demonstrates why nominal prices alone can be misleading. After adjusting selected U.S. launch prices into constant 2025 dollars, PlayStation launch prices fluctuate considerably rather than following a simple upward trend. PS5 quarterly hardware data shows strong holiday seasonality and a pattern of earlier lifecycle expansion followed by more recent moderation. These trends are consistent with a console progressing into a more mature stage of its lifecycle. Historical generation intervals were then used to construct PS6 timing scenarios ranging approximately from **2027 to 2028**. These scenarios provide historical context and should be interpreted as analytical benchmarks rather than predictions of Sony's actual product plans. Overall, this project demonstrates an end-to-end data analysis workflow using **Excel, Python, SQL, and data visualization** to transform multiple datasets into an interactive dashboard and documented analytical case study.
