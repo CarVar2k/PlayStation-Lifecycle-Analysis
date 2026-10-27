@@ -1,8 +1,6 @@
 # Data Sources & Methodology
 
-This document describes the primary data sources, definitions, calculations, assumptions, and limitations used in the **PlayStation Lifecycle Analysis** project.
-
-The project prioritizes first-party sources from **Sony, Sony Interactive Entertainment, PlayStation, and the U.S. Bureau of Labor Statistics** whenever available.
+This document describes the primary data sources, definitions, calculations, assumptions, and limitations used in the **PlayStation Lifecycle Analysis** project. The project prioritizes first-party sources from **Sony, Sony Interactive Entertainment, PlayStation, and the U.S. Bureau of Labor Statistics** whenever available.
 
 ---
 
