@@ -60,7 +60,7 @@ The average of the four completed generation intervals is approximately:
 
 ### Primary Source
 
-**Sony Interactive Entertainment — Business Data & Sales**
+**Sony Interactive Entertainment Business Data & Sales**
 
 Used for historical worldwide PlayStation hardware sales.
 
