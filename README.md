@@ -26,7 +26,7 @@ Sony's PlayStation platform has evolved through multiple console generations sin
 - **Python**: Data cleaning, CPI processing, inflation adjustment, and visualization
 - **Pandas**: Data manipulation and analysis
 - **Matplotlib**: Python data visualization
-- **MySQL**: Quarterly hardware analysis, aggregations, window functions, QoQ/YoY analysis, and reporting views
+- **SQL**: Quarterly hardware analysis, aggregations, window functions, QoQ/YoY analysis, and reporting views
 - **Jupyter Notebook**: Python analysis documentation
 
 ---
@@ -116,35 +116,23 @@ The analysis identified several patterns across PlayStation's historical console
 
 ### 1. Console Lifecycles Have Lengthened
 
-The average completed PlayStation generation interval is approximately **6.29 years**.
-
-The PS3 → PS4 and PS4 → PS5 transitions were both approximately **6.99 years**, showing that recent PlayStation generations have lasted longer than some earlier generations.
+The average completed PlayStation generation interval is approximately **6.29 years**. The PS3 → PS4 and PS4 → PS5 transitions were both approximately **6.99 years** showing that recent PlayStation generations have lasted longer than some earlier generations.
 
 ### 2. Inflation Changes the Pricing Story
 
-After adjusting selected U.S. launch prices into 2025 dollars, the analysis shows that nominal price alone does not accurately represent how expensive each console was relative to its time.
-
-The PS3 configuration analyzed in this project had the highest inflation-adjusted price at approximately **$798**, while the PS4 had the lowest at approximately **$553**.
-
-The PS5's approximately **$622** real launch price is also close to the original PlayStation's approximately **$632** inflation-adjusted launch price.
+After adjusting selected U.S. launch prices into 2025 dollars, the analysis shows that nominal price alone does not accurately represent how expensive each console was relative to its time. The PS3 configuration analyzed in this project had the highest inflation-adjusted price at approximately **$798** while the PS4 had the lowest at approximately **$553**. The PS5's approximately **$622** real launch price is also close to the original PlayStation's approximately **$632** inflation-adjusted launch price.
 
 ### 3. PS5 Shows Strong Holiday Seasonality
 
-PS5 hardware data demonstrates substantial fiscal Q3 seasonality.
-
-Fiscal Q3 contains the October–December holiday period and repeatedly produced some of the strongest hardware shipment results in the dataset.
+PS5 hardware data demonstrates substantial fiscal Q3 seasonality. Fiscal Q3 contains the October–December holiday period and repeatedly produced some of the strongest hardware shipment results in the dataset.
 
 ### 4. PS5 Hardware Performance Has Moderated
 
-PS5 hardware shipments expanded substantially during the earlier portion of the lifecycle before moderating in later completed fiscal years.
-
-This pattern is consistent with a console progressing into a more mature lifecycle stage.
+PS5 hardware shipments expanded substantially during the earlier portion of the lifecycle before moderating in later completed fiscal years. This pattern is consistent with a console progressing into a more mature lifecycle stage.
 
 ### 5. Historical PS6 Scenarios Center Around 2027–2028
 
-Historical generation intervals produce PS6 scenario benchmarks ranging approximately from **2027 to 2028**.
-
-These scenarios provide historical context only and are **not predictions of Sony's actual PS6 release date**.
+Historical generation intervals produce PS6 scenario benchmarks ranging approximately from **2027 to 2028**. These scenarios provide historical context only and are **not predictions of Sony's actual PS6 release date**.
 
 ---
 
@@ -152,9 +140,7 @@ These scenarios provide historical context only and are **not predictions of Son
 
 ## 1. PlayStation Console Lifecycle
 
-The average completed PlayStation generation interval is approximately **6.29 years**.
-
-The two most recent completed transitions were approximately:
+The average completed PlayStation generation interval is approximately **6.29 years**. The two most recent completed transitions were approximately:
 
 - PS3 → PS4: **6.99 years**
 - PS4 → PS5: **6.99 years**
