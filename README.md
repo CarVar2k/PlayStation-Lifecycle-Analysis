@@ -179,17 +179,13 @@ Selected results include:
 
 ### Why It Matters
 
-A higher nominal launch price does not necessarily mean a console was historically more expensive.
-
-Inflation adjustment provides a more meaningful comparison between consoles released decades apart.
+A higher nominal launch price does not necessarily mean a console was historically more expensive. Inflation adjustment provides a more meaningful comparison between consoles released decades apart.
 
 ---
 
 ## 3. PS5 Hardware Performance
 
-The SQL analysis evaluates quarterly PS5 hardware sell-in throughout the console's lifecycle.
-
-The strongest individual quarterly observation in the project dataset was approximately **9.5 million units**.
+The SQL analysis evaluates quarterly PS5 hardware sell-in throughout the console's lifecycle. The strongest individual quarterly observation in the project dataset was approximately **9.5 million units**.
 
 <img width="369" height="196" alt="Screenshot 2026-10-26 at 11 53 11 PM" src="https://github.com/user-attachments/assets/690f90f9-5e5b-4343-b8b2-34fb061360ba" />
 
@@ -204,25 +200,17 @@ The analysis also calculates:
 
 ### Why It Matters
 
-The combination of earlier hardware expansion and subsequent moderation is consistent with PS5 progressing into a more mature lifecycle stage.
-
-However, hardware shipment trends alone cannot determine when Sony will introduce another console generation.
+The combination of earlier hardware expansion and subsequent moderation is consistent with PS5 progressing into a more mature lifecycle stage. However, hardware shipment trends alone cannot determine when Sony will introduce another console generation.
 
 ---
 
 ## 4. Holiday Seasonality
 
-PS5 hardware performance demonstrates substantial seasonality.
-
-Fiscal Q3 includes the October–December holiday shopping period and repeatedly produces strong hardware shipment results.
-
-The highest quarterly observation in the project dataset — approximately **9.5 million units** — occurred during fiscal Q3.
+PS5 hardware performance demonstrates substantial seasonality. Fiscal Q3 includes the October–December holiday shopping period and repeatedly produces strong hardware shipment results. The highest quarterly observation in the project dataset results in approximately **9.5 million units** that occurred during fiscal Q3.
 
 ### Why It Matters
 
-Sequential quarter-over-quarter comparisons can be misleading when strong seasonal patterns exist.
-
-Year-over-year comparisons between equivalent fiscal quarters provide additional context when evaluating hardware momentum.
+Sequential quarter-over-quarter comparisons can be misleading when strong seasonal patterns exist. Year-over-year comparisons between equivalent fiscal quarters provide additional context when evaluating hardware momentum.
 
 ---
 
@@ -240,11 +228,7 @@ Historical PlayStation generation intervals were used to construct three PS6 lif
 
 ### Interpretation
 
-The historical-average scenario produces a benchmark around early 2027.
-
-The two most recent completed PlayStation cycles were approximately seven years, producing a recent-cycle benchmark around late 2027.
-
-The extended scenario evaluates what the timeline would look like if the PS5 generation lasted eight years.
+The historical-average scenario produces a benchmark around early 2027. The two most recent completed PlayStation cycles were approximately seven years, producing a recent-cycle benchmark around late 2027. The extended scenario evaluates what the timeline would look like if the PS5 generation lasted eight years.
 
 > **Important:** These scenarios are historical benchmarks for analytical comparison. They are not forecasts, leaks, Sony guidance, or predictions of the PS6 release date.
 
