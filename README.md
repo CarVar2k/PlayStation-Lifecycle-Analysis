@@ -114,3 +114,11 @@ The findings have several implications for interpreting the PlayStation hardware
 - PS5 quarterly hardware figures are based on reported fiscal-quarter observations and may contain rounding differences when compared with separately reported annual totals.
 
 - Hardware shipment trends alone are insufficient to forecast the timing of a future PlayStation console.
+
+### Final Dashboard
+
+The final interactive Excel dashboard combines historical console lifecycle analysis, inflation-adjusted pricing, PS5 quarterly hardware trends, seasonality, and PS6 scenario benchmarks.
+
+<img width="600" height="531" alt="Screenshot 2026-10-26 at 8 10 13 PM" src="https://github.com/user-attachments/assets/d855043f-7fd5-44e6-8789-6853f512629f" />
+
+The interactive Excel workbook is available [here](https://1drv.ms/x/c/0c56ec3208e00fa0/IQCi3ejKBd1YTpIy-Dx3YY-cAcHrKzuE6TsQsQ69OqueuNw?e=crXb6p)
