@@ -90,9 +90,7 @@ The pricing analysis uses selected U.S. launch configurations to create a consis
 
 ### Important SKU Assumption
 
-Several PlayStation generations launched with more than one configuration or SKU.
-
-For that reason, the project documents the particular U.S. launch price selected for each generation rather than implying that every console had only one launch price.
+Several PlayStation generations launched with more than one configuration or SKU. For that reason, the project documents the particular U.S. launch price selected for each generation rather than implying that every console had only one launch price.
 
 The selected configuration is kept consistent between the:
 
@@ -121,9 +119,7 @@ The PS4 launched in North America on November 15, 2013 at:
 
 ### PlayStation 3
 
-PS3 requires additional consideration because multiple launch configurations existed.
-
-The pricing dataset therefore identifies the selected launch configuration rather than treating one price as the only PS3 launch price.
+PS3 requires additional consideration because multiple launch configurations existed. The pricing dataset therefore identifies the selected launch configuration rather than treating one price as the only PS3 launch price.
 
 The project uses a selected PS3 launch price of:
 
@@ -183,9 +179,7 @@ PS5 Nominal Price × (2025 CPI / 2020 CPI)
 
 ### Why CPI Adjustment Is Used
 
-A nominal dollar amount from 1995 is not directly comparable with the same nominal amount in 2020.
-
-Inflation adjustment converts historical prices into a common purchasing-power benchmark, providing a more meaningful comparison across console generations.
+A nominal dollar amount from 1995 is not directly comparable with the same nominal amount in 2020. Inflation adjustment converts historical prices into a common purchasing-power benchmark, providing a more meaningful comparison across console generations.
 
 ### CPI Limitation
 
@@ -209,11 +203,9 @@ The real-price analysis should therefore be interpreted as a **general purchasin
 
 ### Primary Source
 
-**Sony Interactive Entertainment — Business Data & Sales**
+**Sony Interactive Entertainment Business Data & Sales**
 
-Sony reports worldwide PlayStation 5 hardware unit sales on a **sell-in** basis.
-
-Quarterly observations are reported in millions of units.
+Sony reports worldwide PlayStation 5 hardware unit sales on a **sell-in** basis. Quarterly observations are reported in millions of units.
 
 ### Sony Fiscal Calendar
 
@@ -249,9 +241,7 @@ The **9.5 million-unit FY2024 Q3 observation** is the highest individual quarter
 
 ### Rounding Consideration
 
-Sony reports quarterly observations to one decimal place in millions.
-
-Adding these rounded quarterly observations can therefore produce small differences from Sony's separately reported full-year totals.
+Sony reports quarterly observations to one decimal place in millions. Adding these rounded quarterly observations can therefore produce small differences from Sony's separately reported full-year totals.
 
 > A total calculated from rounded quarterly observations is described as a **derived sum of quarterly observations** rather than substituted for Sony's official annual figure when an official annual total is available.
 
@@ -259,7 +249,7 @@ Adding these rounded quarterly observations can therefore produce small differen
 
 ## 7. SQL-Derived Metrics
 
-The following measures are calculated within **MySQL** and are not directly reported by Sony.
+The following measures are calculated within **SQL** and are not directly reported by Sony.
 
 ### Cumulative Units
 
@@ -291,15 +281,11 @@ YoY Growth (%)
 Same Quarter Previous Fiscal Year) × 100
 ```
 
-The analysis matches equivalent fiscal quarters rather than relying solely on sequential row offsets.
-
-This provides additional context when evaluating seasonal hardware performance.
+The analysis matches equivalent fiscal quarters rather than relying solely on sequential row offsets. This provides additional context when evaluating seasonal hardware performance.
 
 ### Performance Categories
 
-The project also uses analyst-created performance categories based on YoY growth.
-
-These categories are descriptive analytical labels and are **not classifications published or used by Sony**.
+The project also uses analyst-created performance categories based on YoY growth. These categories are descriptive analytical labels and are **not classifications published or used by Sony**.
 
 ---
 
@@ -311,17 +297,13 @@ This pattern is described as being:
 
 **Consistent with lifecycle maturation**
 
-It should **not** be interpreted as proof that the PS5 has reached a specific formal lifecycle stage or as evidence of an imminent successor.
-
-The project's lifecycle interpretation is based on the historical and quarterly datasets documented here.
+It should **not** be interpreted as proof that the PS5 has reached a specific formal lifecycle stage or as evidence of an imminent successor. The project's lifecycle interpretation is based on the historical and quarterly datasets documented here.
 
 ---
 
 ## 9. PS6 Scenario Analysis
 
-No PS6 release date is assumed, predicted, or claimed by this project.
-
-The analysis constructs **three historical timing scenarios**.
+No PS6 release date is assumed, predicted, or claimed by this project. The analysis constructs **three historical timing scenarios**.
 
 ### Historical Average Scenario
 
@@ -346,9 +328,7 @@ The project also evaluates an:
 
 **8.00-year lifecycle**
 
-This is an analyst-created assumption designed to evaluate the implications of a longer PS5 lifecycle.
-
-It is **not** calculated from Sony guidance.
+This is an analyst-created assumption designed to evaluate the implications of a longer PS5 lifecycle. It is **not** calculated from Sony guidance.
 
 ### Scenario-Date Method
 
@@ -426,7 +406,7 @@ Primary libraries:
 - `pandas`
 - `matplotlib`
 
-### MySQL
+### SQL
 
 Used for:
 
@@ -471,7 +451,7 @@ The project repository contains the primary analytical components required to fo
 
 - Historical console analysis in Excel
 - CPI and real-price analysis in Python
-- PS5 quarterly analysis in MySQL
+- PS5 quarterly analysis in SQL
 - Final interactive Excel dashboard
 - Analysis-ready PS5 quarterly dataset
 - SQL scripts
