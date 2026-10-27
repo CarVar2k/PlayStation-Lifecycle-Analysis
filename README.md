@@ -1,124 +1,382 @@
-# PlayStation-Lifecycle-Analysis
-Analyzing PlayStation console lifecycles, inflation-adjusted pricing, PS5 console performance, and PS6 scenario benchmarks using Excel, Python, and SQL.
+# PlayStation Lifecycle Analysis
 
-## Background & Project Overview
+### Analyzing PlayStation console lifecycles, inflation-adjusted pricing, PS5 hardware performance, and PS6 scenario benchmarks using Excel, Python, and SQL.
 
-Sony's PlayStation platform has evolved through multiple console generations since the launch of the original PlayStation in the 1990s. Each generation has differed in lifecycle length, launch pricing, and hardware sales performance. This project analyzes historical PlayStation console cycles, inflation-adjusted launch prices, and PS5 quarterly hardware performance to better understand how the PlayStation platform has evolved over time.
+---
 
-The analysis focuses on three primary questions:
+## Project Overview
+
+Sony's PlayStation platform has evolved through multiple console generations since the launch of the original PlayStation in the 1990s. Each generation has differed in lifecycle length, launch pricing, and hardware performance. This project analyzes historical PlayStation console cycles, inflation-adjusted launch prices, and PS5 quarterly hardware performance to better understand how the PlayStation platform has evolved over time.
+
+### Research Questions
 
 1. How have PlayStation console lifecycle lengths changed across generations?
-2. How have PlayStation launch prices changed after adjusting for inflation?
-3. What do PS5 quarterly hardware trends and historical console cycles suggest about the current stage of the PS5 lifecycle?
+2. How have PlayStation launch prices changed after accounting for inflation?
+3. How has PS5 quarterly hardware performance changed throughout its lifecycle?
+4. What seasonal patterns appear in PS5 hardware shipments?
+5. What historical PS6 timing benchmarks can be constructed from previous PlayStation generations?
 
-Historical lifecycle patterns are also used to construct several PS6 launch-window scenarios. These scenarios are intended as historical benchmarks rather than predictions of Sony's actual product plans.
+> **Note:** The PS6 scenarios in this project are historical benchmarks, not predictions or forecasts of Sony's actual product plans.
 
-The project combines Excel, Python, and MySQL, with a final interactive Excel dashboard used to communicate the results.
+---
 
-## Data & Project Structure
+## Tools Used
+
+- **Microsoft Excel**: Historical analysis, PivotTables, PivotCharts, KPIs, slicers, dashboard design, and scenario analysis
+- **Python**: Data cleaning, CPI processing, inflation adjustment, and visualization
+- **Pandas**: Data manipulation and analysis
+- **Matplotlib**: Python data visualization
+- **MySQL**: Quarterly hardware analysis, aggregations, window functions, QoQ/YoY analysis, and reporting views
+- **Jupyter Notebook**: Python analysis documentation
+
+---
+
+## Final Dashboard
+
+(<img width="600" height="531" alt="dashboard_overview" src="https://github.com/user-attachments/assets/4403b671-be76-4efa-b565-5f49eeeb70d0" />)
+
+
+
+The final Excel dashboard combines:
+
+- Historical PlayStation lifecycle analysis
+- Inflation-adjusted launch-price analysis
+- PS5 quarterly hardware shipments
+- Cumulative PS5 hardware shipments
+- Year-over-year growth
+- Holiday seasonality
+- PS6 lifecycle scenarios
+
+### Project Files
+
+- [Final Excel Dashboard](excel/PlayStation_Lifecycle_Analysis_Final.xlsx)
+- [Python Inflation Analysis](python/playstation_inflation_analysis.ipynb)
+- [Database Setup](sql/01_database_setup.sql)
+- [PS5 SQL Analysis](sql/02_ps5_sales_analysis.sql)
+- [Final SQL Analysis](sql/03_ps5_final_analysis.sql)
+- [PS5 Quarterly Dataset](data/ps5_quarterly_sales.csv)
+- [Sources & Methodology](sources/sources.md)
+
+---
+
+## Data Structure
 
 The project combines three primary analytical datasets.
 
 | Dataset | Level of Analysis | Primary Use |
 |---|---|---|
-| Console History | One observation per PlayStation generation | Release dates, lifecycle lengths, launch prices, and lifetime hardware sales |
-| Console Pricing | One observation per PlayStation generation | CPI-adjusted launch-price analysis |
-| PS5 Quarterly Hardware | One observation per fiscal quarter | Quarterly shipments, cumulative shipments, QoQ growth, YoY growth, and seasonality |
+| Console History | One row per PlayStation generation | Release dates, lifecycle lengths, launch prices, and historical hardware sales |
+| Console Pricing | One row per PlayStation generation | CPI and inflation-adjusted launch prices |
+| PS5 Quarterly Hardware | One row per fiscal quarter | Shipments, cumulative shipments, QoQ growth, YoY growth, and seasonality |
 
-### Analytical Workflow
+---
+
+## Analytical Workflow
+
+The project follows an end-to-end analytical workflow:
 
 **Excel → Python → MySQL → Advanced Excel Dashboard**
 
-## Executive Summary
+### Excel
 
-The analysis identified several patterns across PlayStation's historical console cycles, pricing strategy, and PS5 hardware performance.
+Excel was used to establish the historical PlayStation dataset, calculate generation intervals, and perform the initial exploratory analysis.
 
-- **Console lifecycles have lengthened.** The average completed PlayStation generation interval is approximately **6.29 years**, while both the PS3→PS4 and PS4→PS5 transitions lasted approximately **6.99 years**.
+### Python
 
-- **Higher nominal prices do not necessarily mean consoles became more expensive in real terms.** After adjusting historical U.S. launch prices to 2025 dollars, the PS3 had the highest real launch price at approximately **$798**, while the PS4 had the lowest at approximately **$553**.
+Python was used to process Consumer Price Index data and convert historical PlayStation launch prices into constant 2025 dollars.
 
-- **PS5's inflation-adjusted launch price is similar to the original PlayStation's.** The PS5's approximately **$622** launch price in 2025 dollars is slightly below the PS1's approximately **$632** inflation-adjusted launch price.
+### MySQL
 
-- **PS5 hardware performance shows strong holiday seasonality.** Fiscal Q3 repeatedly produced some of the strongest quarterly hardware results, demonstrating the importance of the October–December holiday period.
+MySQL was used to analyze PS5 quarterly hardware performance, including:
 
-- **PS5 hardware shipments moderated after their earlier lifecycle expansion.** Completed fiscal-year shipment totals increased substantially earlier in the lifecycle before declining after their high point, which is consistent with the console moving into a more mature lifecycle stage.
+- Quarterly shipments
+- Annual shipments
+- Cumulative shipments
+- Quarter-over-quarter growth
+- Year-over-year growth
+- Fiscal-quarter seasonality
+- Performance categories
 
-- **Historical lifecycle scenarios produce approximately a 2027–2028 PS6 benchmark range.** A historical-average cycle points to roughly early 2027, the two most recent completed cycles provide a benchmark around late 2027, and an intentionally extended eight-year scenario reaches late 2028. These scenarios are historical benchmarks and should not be interpreted as forecasts of Sony's plans.
-- **Excel:** Historical console lifecycle analysis and initial exploratory analysis.
-- **Python:** CPI processing and inflation-adjusted PlayStation launch-price analysis.
-- **MySQL:** PS5 quarterly hardware analysis, including cumulative sales, quarter-over-quarter growth, year-over-year growth, and seasonality.
-- **Advanced Excel:** Final dashboard, KPI reporting, interactive filtering, and scenario analysis.
+### Advanced Excel
 
-## Insights Deep Dive
+The final analytical outputs were combined into an interactive Excel dashboard using:
 
-### 1. PlayStation Console Lifecycles Have Lengthened
+- KPI cards
+- PivotTables
+- PivotCharts
+- Slicers
+- Scenario analysis
+- Dashboard navigation
 
-The average completed generation interval across the historical PlayStation dataset is approximately **6.29 years**.
+---
 
-However, the two most recent completed transitions — PS3→PS4 and PS4→PS5 — were both approximately **6.99 years**, compared with 5.13 years between PS1 and PS2.
+# Executive Summary
 
-This suggests that recent PlayStation hardware generations have remained active longer before the introduction of a successor.
+The analysis identified several patterns across PlayStation's historical console cycles, pricing, and PS5 hardware performance.
 
-<img width="624" height="375" alt="Screenshot 2026-10-26 at 12 36 53 AM" src="https://github.com/user-attachments/assets/83e2d495-62f4-49d2-afa4-0be99d00930e" />
+### 1. Console Lifecycles Have Lengthened
 
-### 2. Nominal Price Does Not Tell the Full Pricing Story
+The average completed PlayStation generation interval is approximately **6.29 years**.
 
-PlayStation launch prices vary substantially after adjusting for inflation.
+The PS3 → PS4 and PS4 → PS5 transitions were both approximately **6.99 years**, showing that recent PlayStation generations have lasted longer than some earlier generations.
 
-The PS3 represents the highest inflation-adjusted launch price in the dataset at approximately **$798 in 2025 dollars**, while the PS4 represents the lowest at approximately **$553**.
+### 2. Inflation Changes the Pricing Story
 
-Interestingly, the PS5's inflation-adjusted launch price of approximately **$622** is slightly below the original PlayStation's approximately **$632** real launch price.
+After adjusting selected U.S. launch prices into 2025 dollars, the analysis shows that nominal price alone does not accurately represent how expensive each console was relative to its time.
 
-This demonstrates why nominal prices alone can be misleading when comparing products launched decades apart.
+The PS3 configuration analyzed in this project had the highest inflation-adjusted price at approximately **$798**, while the PS4 had the lowest at approximately **$553**.
 
-<img width="630" height="346" alt="Screenshot 2026-10-26 at 12 43 53 AM" src="https://github.com/user-attachments/assets/59c17102-5049-4886-ad9e-c07719dceb49" />
+The PS5's approximately **$622** real launch price is also close to the original PlayStation's approximately **$632** inflation-adjusted launch price.
 
-### 3. PS5 Hardware Performance Shows Lifecycle Maturation
+### 3. PS5 Shows Strong Holiday Seasonality
 
-Quarterly PS5 hardware data shows substantial growth during the earlier years of the console's lifecycle, followed by moderation in later completed fiscal years.
+PS5 hardware data demonstrates substantial fiscal Q3 seasonality.
 
-The strongest individual quarterly observation in the dataset was approximately **9.5 million units**, while cumulative quarterly observations reached approximately **95.3 million units** through the latest period included in the analysis.
+Fiscal Q3 contains the October–December holiday period and repeatedly produced some of the strongest hardware shipment results in the dataset.
 
-The combination of an earlier sales expansion followed by declining completed fiscal-year totals is consistent with a console progressing toward a more mature lifecycle stage.
+### 4. PS5 Hardware Performance Has Moderated
 
-However, hardware shipment trends alone cannot determine when Sony will introduce its next console generation.
+PS5 hardware shipments expanded substantially during the earlier portion of the lifecycle before moderating in later completed fiscal years.
 
-## Analytical Implications
+This pattern is consistent with a console progressing into a more mature lifecycle stage.
 
-The findings have several implications for interpreting the PlayStation hardware market:
+### 5. Historical PS6 Scenarios Center Around 2027–2028
 
-- **Lifecycle comparisons should emphasize recent generations as well as the historical average.** The approximately seven-year PS3→PS4 and PS4→PS5 cycles may provide more relevant context for the current generation than earlier, shorter PlayStation cycles.
+Historical generation intervals produce PS6 scenario benchmarks ranging approximately from **2027 to 2028**.
 
-- **Console pricing should be evaluated in real rather than nominal dollars.** Inflation-adjusted prices show that a higher sticker price does not necessarily represent a historically more expensive console.
+These scenarios provide historical context only and are **not predictions of Sony's actual PS6 release date**.
 
-- **Seasonality should be considered when evaluating PS5 hardware momentum.** Fiscal Q3 contains the holiday period and consistently produces stronger hardware results, meaning quarter-to-quarter comparisons can be misleading without seasonal context.
+---
 
-- **Recent hardware moderation should be interpreted as lifecycle evidence, not a PS6 release signal.** Declining hardware shipments may be consistent with lifecycle maturation, but Sony's future hardware timing depends on strategic and technological factors that are not captured by this dataset.
+# Insights Deep Dive
 
-- **PS6 dates should therefore be presented as scenario benchmarks rather than predictions.** Historical lifecycle intervals provide useful context for evaluating possible timing, but they cannot establish Sony's actual release schedule.
+## 1. PlayStation Console Lifecycle
 
-## Caveats & Assumptions
+The average completed PlayStation generation interval is approximately **6.29 years**.
 
-- The lifecycle analysis contains only four completed PlayStation generation transitions, creating a very small historical sample.
+The two most recent completed transitions were approximately:
 
-- PS6 has not been assigned an actual release date in this analysis. All PS6 dates shown are scenario-based historical benchmarks.
+- PS3 → PS4: **6.99 years**
+- PS4 → PS5: **6.99 years**
 
-- The extended eight-year PS6 scenario is an analyst assumption rather than a value calculated directly from historical observations.
+This suggests that recent PlayStation generations have remained active longer before the launch of their successors.
 
-- Inflation-adjusted launch prices use U.S. CPI-U annual averages and are expressed in constant 2025 dollars.
+![PlayStation Lifecycle Analysis](images/lifecycle_analysis.png)
 
-- CPI measures changes in the general consumer price level and does not account for improvements in console hardware capabilities, product quality, consumer income, or willingness to pay.
+### Why It Matters
 
-- Historical launch-price comparisons use selected U.S. launch configurations. Console generations with multiple launch SKUs may therefore require additional interpretation.
+The historical average provides a useful benchmark, but the two most recent completed generations suggest that recent PlayStation hardware cycles have been closer to seven years.
 
-- PS5 quarterly hardware figures are based on reported fiscal-quarter observations and may contain rounding differences when compared with separately reported annual totals.
+---
 
-- Hardware shipment trends alone are insufficient to forecast the timing of a future PlayStation console.
+## 2. Inflation-Adjusted Launch Prices
 
-### Final Dashboard
+Historical console prices were converted into constant **2025 U.S. dollars** using CPI-U data from the U.S. Bureau of Labor Statistics.
 
-The final interactive Excel dashboard combines historical console lifecycle analysis, inflation-adjusted pricing, PS5 quarterly hardware trends, seasonality, and PS6 scenario benchmarks.
+The formula used was:
 
-<img width="600" height="531" alt="Screenshot 2026-10-26 at 8 10 13 PM" src="https://github.com/user-attachments/assets/d855043f-7fd5-44e6-8789-6853f512629f" />
+**Real Price (2025 USD) = Nominal Launch Price × (2025 CPI / Launch-Year CPI)**
 
-The interactive Excel workbook is available [here](https://1drv.ms/x/c/0c56ec3208e00fa0/IQCi3ejKBd1YTpIy-Dx3YY-cAcHrKzuE6TsQsQ69OqueuNw?e=crXb6p)
+Selected results include:
+
+| Console | Nominal Launch Price | Real Price in 2025 USD |
+|---|---:|---:|
+| PS1 | $299.00 | ~$631.70 |
+| PS2 | $299.99 | ~$560.86 |
+| PS3* | $499.99 | ~$798.49 |
+| PS4 | $399.99 | ~$552.78 |
+| PS5 | $499.99 | ~$621.95 |
+
+\*PS3 launched with multiple configurations. The project uses a selected launch configuration for consistency and documents this assumption in the source methodology.
+
+![PlayStation Pricing Analysis](images/pricing_analysis.png)
+
+### Why It Matters
+
+A higher nominal launch price does not necessarily mean a console was historically more expensive.
+
+Inflation adjustment provides a more meaningful comparison between consoles released decades apart.
+
+---
+
+## 3. PS5 Hardware Performance
+
+The SQL analysis evaluates quarterly PS5 hardware sell-in throughout the console's lifecycle.
+
+The strongest individual quarterly observation in the project dataset was approximately **9.5 million units**.
+
+![PS5 Hardware Analysis](images/ps5_sales_analysis.png)
+
+The analysis also calculates:
+
+- Quarterly hardware shipments
+- Cumulative hardware shipments
+- QoQ growth
+- YoY growth
+- Annual totals
+- Fiscal-quarter seasonality
+
+### Why It Matters
+
+The combination of earlier hardware expansion and subsequent moderation is consistent with PS5 progressing into a more mature lifecycle stage.
+
+However, hardware shipment trends alone cannot determine when Sony will introduce another console generation.
+
+---
+
+## 4. Holiday Seasonality
+
+PS5 hardware performance demonstrates substantial seasonality.
+
+Fiscal Q3 includes the October–December holiday shopping period and repeatedly produces strong hardware shipment results.
+
+The highest quarterly observation in the project dataset — approximately **9.5 million units** — occurred during fiscal Q3.
+
+### Why It Matters
+
+Sequential quarter-over-quarter comparisons can be misleading when strong seasonal patterns exist.
+
+Year-over-year comparisons between equivalent fiscal quarters provide additional context when evaluating hardware momentum.
+
+---
+
+# PS6 Scenario Analysis
+
+Historical PlayStation generation intervals were used to construct three PS6 lifecycle scenarios.
+
+| Scenario | Lifecycle Length | Approximate Benchmark | Basis |
+|---|---:|---|---|
+| Historical Average | 6.29 years | Early 2027 | Average of completed historical cycles |
+| Recent Cycle | 6.99 years | Late 2027 | Recent PS3→PS4 and PS4→PS5 cycles |
+| Extended Cycle | 8.00 years | Late 2028 | Analyst-created extended lifecycle assumption |
+
+![PS6 Scenario Analysis](images/ps6_scenarios.png)
+
+### Interpretation
+
+The historical-average scenario produces a benchmark around early 2027.
+
+The two most recent completed PlayStation cycles were approximately seven years, producing a recent-cycle benchmark around late 2027.
+
+The extended scenario evaluates what the timeline would look like if the PS5 generation lasted eight years.
+
+> **Important:** These scenarios are historical benchmarks for analytical comparison. They are not forecasts, leaks, Sony guidance, or predictions of the PS6 release date.
+
+---
+
+# Analytical Implications
+
+### Lifecycle
+
+Recent PlayStation generations have lasted approximately seven years, making recent-generation intervals useful alongside the full historical average when evaluating PS5's lifecycle.
+
+### Pricing
+
+Console pricing should be evaluated using both nominal and inflation-adjusted dollars. A higher sticker price does not necessarily mean a console was historically more expensive.
+
+### Seasonality
+
+Fiscal Q3 holiday performance should be considered when interpreting PS5 hardware momentum. Comparing equivalent fiscal quarters can provide better context than relying only on sequential quarterly changes.
+
+### PS5 Lifecycle
+
+Moderating hardware shipments may be consistent with lifecycle maturation but should not be interpreted as direct evidence of an upcoming PS6 launch.
+
+### PS6 Scenarios
+
+Historical lifecycle intervals provide useful scenario benchmarks, but they cannot determine Sony's actual hardware strategy.
+
+---
+
+# Caveats & Assumptions
+
+- Only four completed main-generation PlayStation transitions are available for lifecycle analysis.
+- The historical sample is therefore too small to support a credible statistical prediction of a PS6 release date.
+- PS6 dates shown in the project are scenario benchmarks rather than forecasts.
+- The eight-year lifecycle scenario is an analyst-created assumption.
+- Inflation-adjusted prices use CPI-U and are expressed in constant 2025 dollars.
+- CPI measures the general consumer price level and does not account for improvements in console technology or product quality.
+- Several PlayStation generations launched with multiple configurations, so selected U.S. launch configurations are used for historical price comparisons.
+- PS5 is an active platform, so its current cumulative hardware figure should not be interpreted as completed lifetime sales.
+- Sony's quarterly hardware figures are rounded, which can create small differences between calculated quarterly sums and separately reported annual totals.
+- Sony's fiscal year runs from April through March.
+- Hardware shipment trends alone cannot forecast future PlayStation hardware releases.
+
+---
+
+# Technical Skills Demonstrated
+
+## Excel
+
+- Data cleaning
+- Excel Tables
+- Formulas
+- XLOOKUP
+- KPI calculations
+- PivotTables
+- PivotCharts
+- Slicers
+- Dashboard development
+- Scenario analysis
+
+## Python
+
+- pandas
+- Data cleaning
+- Data transformation
+- Dataset merging
+- CPI analysis
+- Inflation adjustment
+- Percentage-change calculations
+- Exploratory data analysis
+- Matplotlib visualization
+
+## MySQL
+
+- Database creation
+- Table creation
+- Data validation
+- GROUP BY
+- Aggregate functions
+- CASE expressions
+- Common Table Expressions
+- Window functions
+- LAG()
+- Cumulative calculations
+- QoQ analysis
+- YoY analysis
+- SQL views
+- Reporting queries
+
+---
+
+# Repository Structure
+
+```text
+playstation-lifecycle-analysis/
+│
+├── README.md
+│
+├── data/
+│   └── ps5_quarterly_sales.csv
+│
+├── excel/
+│   └── PlayStation_Lifecycle_Analysis_Final.xlsx
+│
+├── python/
+│   └── playstation_inflation_analysis.ipynb
+│
+├── sql/
+│   ├── 01_database_setup.sql
+│   ├── 02_ps5_sales_analysis.sql
+│   └── 03_ps5_final_analysis.sql
+│
+├── images/
+│   ├── dashboard_overview.png
+│   ├── lifecycle_analysis.png
+│   ├── pricing_analysis.png
+│   ├── ps5_sales_analysis.png
+│   └── ps6_scenarios.png
+│
+└── sources/
+    └── sources.md
