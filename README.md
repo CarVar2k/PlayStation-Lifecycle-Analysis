@@ -49,7 +49,7 @@ The final Excel dashboard combines:
 
 ### Project Files
 
-- [Final Excel Dashboard](excel/PlayStation_Lifecycle_Analysis_Final.xlsx)
+- [Final Excel Dashboard](excel/PlayStation_Lifecycle_Analysis.xlsx)
 - [Python Inflation Analysis](python/playstation_inflation_analysis.ipynb)
 - [Database Setup](sql/01_database_setup.sql)
 - [PS5 SQL Analysis](sql/02_ps5_sales_analysis.sql)
