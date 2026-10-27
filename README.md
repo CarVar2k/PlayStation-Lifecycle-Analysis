@@ -380,3 +380,10 @@ playstation-lifecycle-analysis/
 │
 └── sources/
     └── sources.md
+```
+
+---
+
+# Conclusion
+
+This analysis shows how PlayStation's console lifecycle, pricing, and hardware performance have evolved across generations. The historical lifecycle analysis found an average completed generation interval of approximately **6.29 years**, while the two most recent completed PlayStation transitions lasted approximately **6.99 years**. The inflation analysis also demonstrates why nominal prices alone can be misleading. After adjusting selected U.S. launch prices into constant 2025 dollars, PlayStation launch prices fluctuate considerably rather than following a simple upward trend. PS5 quarterly hardware data shows strong holiday seasonality and a pattern of earlier lifecycle expansion followed by more recent moderation. These trends are consistent with a console progressing into a more mature stage of its lifecycle. Historical generation intervals were then used to construct PS6 timing scenarios ranging approximately from **2027 to 2028**. These scenarios provide historical context and should be interpreted as analytical benchmarks rather than predictions of Sony's actual product plans. Overall, this project demonstrates an end-to-end data analysis workflow using **Excel, Python, MySQL, and data visualization** to transform multiple datasets into an interactive dashboard and documented analytical case study.
