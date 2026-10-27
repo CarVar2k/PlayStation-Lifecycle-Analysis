@@ -471,3 +471,7 @@ The objective is to make each major result traceable from its source data throug
 **"The most valuable of all capital is that invested in human being" -Alfred Marshall**
 
 **10.27.2026**
+
+### Return to Main Project
+
+[Back to PlayStation Lifecycle Analysis](../README.md)
