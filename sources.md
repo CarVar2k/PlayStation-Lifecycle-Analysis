@@ -461,3 +461,13 @@ The project repository contains the primary analytical components required to fo
 The objective is to make each major result traceable from its source data through its analytical transformation to its final visualization.
 
 ---
+
+## Author
+
+**Carlos Varela**
+
+**Data Analyst | Economics Graduate**
+
+**"The most valuable of all capital is that invested in human being" -Alfred Marshall**
+
+**10.27.2026**
