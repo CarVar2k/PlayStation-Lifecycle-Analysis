@@ -389,7 +389,7 @@ All inflation-adjusted prices are expressed in **2025 U.S. dollars**.
 
 For detailed source documentation, methodology, metric definitions, and analytical assumptions:
 
-➡️ [View Data Sources & Methodology](sources/sources.md)
+[View Data Sources & Methodology](sources.md)
 
 ---
 
