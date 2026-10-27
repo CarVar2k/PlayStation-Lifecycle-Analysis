@@ -55,7 +55,7 @@ The final Excel dashboard combines:
 - [PS5 SQL Analysis](sql/02_ps5_sales_analysis.sql)
 - [Final SQL Analysis](sql/03_ps5_final_analysis.sql)
 - [PS5 Quarterly Dataset](data/ps5_quarterly_sales.csv)
-- [Sources & Methodology](sources/sources.md)
+- [Sources & Methodology](sources.md)
 
 ---
 
