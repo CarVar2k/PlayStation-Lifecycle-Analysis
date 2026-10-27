@@ -161,7 +161,7 @@ The two most recent completed transitions were approximately:
 
 This suggests that recent PlayStation generations have remained active longer before the launch of their successors.
 
-<img width="624" height="375" alt="Screenshot 2026-10-26 at 12 36 53 AM" src="https://github.com/user-attachments/assets/2ef31bf0-00d9-4928-92ca-934da26a6639" />
+<img width="366" height="201" alt="Screenshot 2026-10-27 at 12 03 59 AM" src="https://github.com/user-attachments/assets/7270d3c5-1dd5-4a02-a4bf-11b9ce16b00c" />
 
 ### Why It Matters
 
@@ -189,7 +189,7 @@ Selected results include:
 
 \*PS3 launched with multiple configurations. The project uses a selected launch configuration for consistency and documents this assumption in the source methodology.
 
-<img width="630" height="346" alt="Screenshot 2026-10-26 at 12 43 53 AM" src="https://github.com/user-attachments/assets/0389405f-b7a4-4b77-bf72-97e41fc32d1f" />
+<img width="367" height="196" alt="Screenshot 2026-10-27 at 12 02 09 AM" src="https://github.com/user-attachments/assets/b30610f1-c156-4984-bf64-a8fc9a6d4126" />
 
 ### Why It Matters
 
@@ -205,7 +205,7 @@ The SQL analysis evaluates quarterly PS5 hardware sell-in throughout the console
 
 The strongest individual quarterly observation in the project dataset was approximately **9.5 million units**.
 
-![PS5 Hardware Analysis](images/ps5_sales_analysis.png)
+<img width="369" height="196" alt="Screenshot 2026-10-26 at 11 53 11 PM" src="https://github.com/user-attachments/assets/690f90f9-5e5b-4343-b8b2-34fb061360ba" />
 
 The analysis also calculates:
 
@@ -250,7 +250,7 @@ Historical PlayStation generation intervals were used to construct three PS6 lif
 | Recent Cycle | 6.99 years | Late 2027 | Recent PS3→PS4 and PS4→PS5 cycles |
 | Extended Cycle | 8.00 years | Late 2028 | Analyst-created extended lifecycle assumption |
 
-![PS6 Scenario Analysis](images/ps6_scenarios.png)
+<img width="366" height="200" alt="Screenshot 2026-10-27 at 12 00 05 AM" src="https://github.com/user-attachments/assets/c27ffc53-934e-4f25-adc5-5daee2732e13" />
 
 ### Interpretation
 
